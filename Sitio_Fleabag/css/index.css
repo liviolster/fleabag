@@ -1,0 +1,307 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Michroma&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue';
+    background-color: #7C8A87;
+}
+
+.body{
+    font-family: 'Bebas Neue';
+    background-color: #7C8A87;  
+}
+
+.titulo-principal {
+    color: red;
+    text-align: center;
+    padding: 1px;
+    background-color: black;
+    padding-top: 10px;
+}
+
+.navbar-toggler{
+  margin-bottom: 20px;
+  border: #6E7873;
+
+
+}
+.nav-link {
+    color: #6E7873;
+
+}
+
+.nav-link:hover {
+    color: #ff0000;
+    font-family: 'Bebas Neue';
+
+}
+
+
+.nav-link.active {
+ color: red;
+}
+
+nav {
+    background-color: black!important;
+}
+
+.navbar-nav{
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.collapse {
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.material-symbols-outlined {
+  color: #6E7873;
+}
+
+
+.justify-content-center {
+  justify-content: center!important;
+
+}
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 60px;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+.imagen-principal {
+    max-width: 100%;
+}
+
+.btn-outline-dark {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.bottom-left {
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+.imgFeat:hover {
+width: 300px;
+}
+
+/* FOOTER */
+footer {
+    color: white;
+    font-family: "Montserrat";
+    margin-top: 40px;
+}
+
+.text-small {
+    font-size: 0.9rem;
+  }
+.text-muted {
+    color: white!important;
+    font-size: 10px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #ff0000;
+  }
+  .form-control {
+    background: transparent;
+    border-color: white;
+    border-radius: 0;
+  }
+  
+  .form-control:focus {
+    background: transparent;
+    color: white;
+  }
+  
+  footer {
+    background: #6E7873;
+  }
+
+  .footerArt {
+    background: black;
+  }
+
+  .btn-primary{
+    background-color: transparent;
+    border-color: white;
+  }
+
+  .btn-news {
+    border-radius: 0 ;
+  }
+
+.text-white {
+color: red!important;
+font-family: "Bebas Neue";
+  }
+
+  .fa-brands{
+    margin-right: 20px;
+  }
+
+  .in-black {
+    color: black !important;;
+  }
+
+h2 {
+    margin-left: 20px;
+}
+
+/* characters */
+
+.characters {
+padding: 20px;
+}
+
+.cardCharacters{
+  padding: 20px;
+}
+
+
+.rounded:hover {
+  width: 310px;
+}
+
+.about{
+  margin-top: 40px;
+}
+
+.aboutP{
+  padding: 40px;
+  color: white;
+  font-family: "Montserrat";
+}
+
+.navbar-toggler-icon{
+  color: white;
+}
+
+.bodyArt {
+  background-color: black;
+}
+
+.poster {
+  width: 70%!important;
+  margin: auto;
+  margin-top: 40px;
+}
+
+
+/* articleCharacter */
+
+.characterName {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+.imgArticle{
+max-width: 400px;
+}
+
+.pChar {
+  font-family: "Montserrat";
+  font-size: 12.5px;
+}
+
+
+/* QUOTES */
+
+.fraseBoton{
+  justify-content: center!important;
+text-align: center;
+margin-top: 80px;
+margin-bottom: 80px;
+}
+
+.botonQuotes{
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.iconsWhite{
+  color: white!important;
+}
+
+.inWhite {
+  color: white!important;
+}
+
+
+.igEmbed{
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  justify-content: center!important;
+
+}
+
+
+
+@media screen and (max-width: 640px) and (min-width: 320px) {
+  .bottom-left {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    top: 10px;
+    color: black;
+    font-size: 20px;
+  }
+  .buttonInt{
+    color: black;
+    font-size: 20px;
+
+  }
+  .rowFeatured {
+    margin-left: 15%;
+  }
+  .imagen-principal{
+    min-height: 400px;
+    object-fit:cover;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rowFeatured {
+    margin-left: 17%;}
+    .imagen-principal{
+      min-height: 400px;
+      object-fit:cover;
+    }
+}
