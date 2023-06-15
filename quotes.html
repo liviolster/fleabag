@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0
+.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min
+.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/p
+opper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.
+min.js"></script>
+<link rel="stylesheet" href="./css/index.css">
+<link rel="icon" type="image/x-icon" href="./assets/images/Mesa-de-trabajo-1.ico">
+   
+<title>Quotes</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/06d0e98269.js" crossorigin="anonymous"></script>
+  </head>
+
+ <body class="body"></body>
+  <!-- NAVBAR -->
+
+ 
+    <div class="titulo-principal"> 
+      <a href="./index.html"><h1>FLEABAG</h1></a>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-symbols-outlined">
+          menu
+          </span>      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav justify-content-center">
+          <a class="nav-item nav-link" href="./index.html">HOME <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="./characters.html">CHARACTERS</a>
+          <a class="nav-item nav-link active" href="./quotes.html">QUOTES</a>
+          <a class="nav-item nav-link" href="./art.html">ART</a>
+          <a class="nav-item nav-link" href="./community.html">COMMUNITY</a>
+
+        </div>
+      </div>
+    </nav>
+
+
+<!-- MAIN -->
+<main class="bckImg">
+
+<div class="fraseBoton">
+
+<h1 id="fraseAleatoria"></h1>
+<button onclick="mostrarFraseAleatoria()" class="botonQuotes">Show Quote</button>
+
+
+<script>
+
+  var frases = [
+  "Don´t make me an optimist. You will ruin my life. -Fleabag",
+
+  "I think you know how to love better than any of us. That’s why you find it all so painful. -Dad",
+
+  "That’s the very reason why they put rubbers on the end of pencils … because people make mistakes. -Boo",
+  
+  "Why believe in something awful when you can believe in something wonderful? -The Priest",
+
+  "The only person I’d run through an airport for is you. -Claire",
+
+  "Being proper and sweet and nice and pleasing is a fucking nightmare. It’s exhausting. — Fleabag",
+
+  "I was taught if we’re born with love, then life is about choosing the right place to put it. People talk about that a lot, it feeling right. When it feels right, it’s easy. But I’m not sure that’s true. It takes strength to know what’s right. And love isn’t something that weak people do. Being a romantic takes a hell of a lot of hope. I think what they mean is… when you find somebody that you love, it feels like hope. — The Priest",
+
+  "I want someone to tell me what to wear every morning. I want someone to tell me what to eat. What to like, what to hate, what to rage about, what to listen to, what band to like, what to buy tickets for, what to joke about, what not to joke about. I want someone to tell me what to believe in, who to vote for, and who to love, and how to tell them. I just think I want someone to tell me how to live my life, Father, because so far I think I’ve been getting it wrong. — Fleabag",
+
+  "Don’t make me hate you. Loving you is painful enough. — Harry",
+
+  "I have a horrible feeling that I’m a greedy, perverted, selfish, apathetic, cynical, depraved, morally bankrupt woman who can’t even call herself a feminist. — Fleabag",
+
+  "I don’t think you have to be alone to be lonely. — Fleabag",
+
+  "Chic means boring. Don’t tell the French. — Fleabag",
+
+  "Women are born with paint built in. It’s our physical destiny. Period pain. Sore boobs. Childbirth. We carry it within ourselves throughout our lives. Men don’t. They have to seek it out. — Belinda",
+
+  "Maybe happiness isn’t what you believe, but who you believe. — Fleabag",
+
+  "Here’s to peace. And those who get in the way of it. — The Priest",
+
+  "So it turns out it’s quite hard to come up with something original to say about love, but I’ve had a go. Love is awful. It’s painful. Frightening. It makes you doubt yourself, judge yourself, distance yourself from the other people in your life. Makes you selfish, makes you creepy, makes you obsessed with your hair. Makes you cruel. Makes you say and do things you never thought you would do. It’s all any of us want and it’s hell when we get there. So it’s no wonder it’s something we don’t want to do on our own. — The Priest",
+
+  "It’ll pass. -The Priest"
+
+];
+
+function mostrarFraseAleatoria() {
+  var indiceAleatorio = Math.floor(Math.random () * frases.length);
+  var frase = frases [indiceAleatorio];
+  var elementoFrase = document.getElementById("fraseAleatoria");
+  elementoFrase.textContent = frase;
+}
+
+
+function alerta(){
+  alert("Gracias por suscribirte a nuestro Newsletter")
+}
+
+
+
+</script>
+
+</div>
+
+</main>
+      <!-- FOOTER -->
+<footer class="w-100 py-4 flex-shrink-0">
+    <div class="container py-4">
+        <div class="row gy-4 gx-5">
+            <div class="col-lg-4 col-md-6">
+                <h5 class="h1 text-white">FB.</h5>
+                <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="small text-muted mb-0 in-black">&copy; Copyrights. All rights reserved.</p>
+            </div>
+            <div class="col-lg-2 col-md-6 links-news">
+                <h5 class=" mb-3">Quick links</h5>
+                <ul class="list-unstyled text-muted">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./characters.html">Characters</a></li>
+                  <li><a href="./quotes.html">Quotes</a></li>
+                  <li><a href="./art.html">Art</a></li>
+                  <li><a href="./community.html">Community</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h5 class=" mb-3">Newsletter</h5>
+                <form action="#">
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="text" aria-describedby="button-addon2">
+  <button onclick="alerta()" class="btn btn-primary btn-news" id="button-addon2" type="button"><span class="material-icons">
+                        east
+                        </span>
+                      </button>                    </div>
+                </form>
+                <div>
+                  <p> Social Media </p>
+                 <p class="in-black"> Follow Fleabag! </p>
+                <div class="icons-socials">
+                  <a href="https://www.instagram.com/bbcfleabag/" target="_blank"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+                  <a href="https://twitter.com/fleabag?s=20" target="_blank"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a>
+                  <a href="https://www.tumblr.com/tagged/fleabag?sort=top" target="_blank"><i class="fa-brands fa-tumblr" style="color: #000000;"></i></a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+    </body>
+    </html>
