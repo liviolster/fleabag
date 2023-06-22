@@ -285,6 +285,23 @@ margin-bottom: 80px;
 }
 
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.card-body {
+  padding: 0rem;
+  margin-top: 20px;
+}
+
 .formCommunity{
   margin: auto;
   padding: 100px;
