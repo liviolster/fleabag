@@ -87,11 +87,62 @@ min.js"></script>
     </div>
     </div>
 
+
+
+
+
+
+
+<!-- PHOEBE -->
+<h2>"Fleabag" the unnamed protagonist</h2>
+<hr>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="./assets/images/flea2.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./assets/images/flea1.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./assets/images/flea3.jpg" alt="Third slide">
+    </div>
+  </div>
+</div>
+
+<div class="readMore">
+  <div class="readMore1">
+<p class="fbio">
+
+  Biography:
+  Fleabag, the central character in the TV series of the same name, is a complex and multifaceted individual who serves as both the narrator and protagonist of her own story. Her real name is never revealed, and the nickname "Fleabag" alludes to her self-deprecating sense of humor and the struggles she faces throughout the series.
+  
+  Fleabag's background and upbringing are not extensively explored, but the series hints at a life marked by tragedy and loss. Her mother's death, the strained relationship with her father, and the absence of her best friend Boo, who tragically passed away, contribute to the underlying pain and emotional turmoil that shape her character.
+  
+  Character Analysis:
+  Fleabag's character is defined by her sharp wit, self-destructive tendencies, and an unfiltered stream of consciousness that invites the audience into her inner world. She presents herself as an audacious and sexually liberated woman, unapologetic in her pursuit of pleasure and temporary distractions from her emotional pain. However, beneath her bravado lies a vulnerable and deeply wounded individual.
+  
+  Fleabag's coping mechanism of humor often serves as a shield to mask her true emotions. Her constant use of irony, sarcasm, and breaking the fourth wall adds an additional layer of complexity to her character. It allows her to maintain a sense of control over her narrative and the ability to distance herself from her own vulnerability.
+  <span class="readMoreText">
+    Throughout the series, Fleabag grapples with a range of emotions, including guilt, grief, and self-doubt. Her actions often veer between seeking connection and sabotaging relationships, as she struggles to reconcile her own desires with the fear of intimacy and the lingering pain from past traumas. This internal conflict drives her journey of self-discovery and redemption.
+  
+  Fleabag's relationships with the people in her life are central to her character development. Her complicated bond with her sister, Claire, alternates between support and rivalry, revealing the complexities of sibling dynamics. Her interactions with her father, stepmother, and various romantic partners further shed light on her struggles with intimacy, vulnerability, and the search for genuine connection.
+  
+  Phoebe Waller-Bridge's portrayal of Fleabag is nothing short of remarkable. Waller-Bridge effortlessly brings the character to life, capturing her charisma, vulnerability, and the raw emotions that lie beneath her charismatic facade. The subtle nuances in Waller-Bridge's performance invite the audience to empathize with Fleabag's pain, flaws, and ultimately, her journey towards self-discovery and growth.
+  
+  In conclusion, Fleabag in the eponymous TV series is a complex and compelling protagonist. Her character is shaped by a blend of humor, vulnerability, and a deep-seated emotional pain. Through her journey, the show explores themes of grief, guilt, and the quest for connection in a fragmented world. Fleabag's story serves as a reminder of the power of resilience, self-reflection, and the potential for redemption in the face of adversity.
+  </span>
+</p>
+<span class="readMoreButton">Read more...</span>
+</div>
+</div>
+
+
 <!-- Featured -->
 
-    <h2>Featured</h2>
-    <hr>
-
+    <h2 class="featured">Featured</h2>
+  
+<hr>
   
     
 
@@ -144,6 +195,28 @@ min.js"></script>
 function alerta(){
   alert("Gracias por suscribirte a nuestro Newsletter")
 }
+
+const parentContainer = document.querySelector('.readMore');
+
+parentContainer.addEventListener('click', event=>{
+
+const current = event.target;
+
+const isReadMoreBtn = current.className.includes ('readMoreButton') ;
+
+if (!isReadMoreBtn) return;
+
+const currentText = event.target.parentNode.querySelector('.readMoreText');
+
+currentText.classList.toggle('readMoreText--show');
+
+current.textContent = current.textContent.includes('Read more') ?
+"Read less..." : "Read more...";
+
+})
+
+
+
 
 </script>
 
